@@ -13,7 +13,7 @@
 <body>
     <section class="main-section" id="section-1">
         <header>
-            <nav>
+            <nav class="nav-desktop">
                 <div class="nav-links">
                     <a href="#info-section">O FIRMĚ</a>
                     <a href="#sluzby-section">NAŠE SLUŽBY</a>
@@ -25,11 +25,56 @@
                     <h3 class="text-blue">605 111 113</h3>
                 </div>
             </nav>
+            <!--    Made by Erik Terwan    -->
+            <!--   24th of November 2015   -->
+            <!--        MIT License        -->
+            <nav role="navigation" class="nav-mobile">
+                <div id="menuToggle">
+                    <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+                    <input type="checkbox" />
+
+                    <!--
+      Some spans to act as a hamburger.
+      
+      They are acting like a real hamburger,
+      not that McDonalds stuff.
+      -->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                    <!--
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+      -->
+                    <ul id="menu">
+                        <a href="#info-section2">
+                            <li>O FIRMĚ</li>
+                        </a>
+                        <a href="#sluzby-section">
+                            <li>NAŠE SLUŽBY</li>
+                        </a>
+                        <a href="#contact-section">
+                            <li>OTEVÍRÁCÍ DOBA</li>
+                        </a>
+                        <a href="#contact-section">
+                            <li>KONTAKT</li>
+                        </a>
+                        <a>
+                            <li>605 111 113</li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
         </header>
         <section class="uvod-section">
             <section class="uvod-about">
                 <h1>ELEKTRO JE<br>NÁŠ <span style="color:blue;">SVĚT</span></h1>
-                <p class="small-text">Naší snahou a zároveň cílem je poskytovat elektro rozvody na vysoké kvalitativní úrovni. Tento cíl
+                <p class="small-text">Naší snahou a zároveň cílem je poskytovat elektro rozvody na vysoké kvalitativní
+                    úrovni. Tento cíl
                     plníme společně se snahou udržovat ceny našich služeb na rozumné hladině.</p>
                 <div>
                     <button class="btn btn-blue">KONTAKT</button>
@@ -45,7 +90,19 @@
         <div class="city-svg"></div>
         <section>
             <h2>O FIRMĚ</h2>
-            <p class="small-text">Hlavní činností naší společnosti jsou elektromontáže, při kterých nabízíme kompletní paletu služeb. V
+            <p class="small-text">Hlavní činností naší společnosti jsou elektromontáže, při kterých nabízíme kompletní
+                paletu služeb. V
+                rámci této činnosti provádíme svým klientům slaboproudou i&nbspsilnoproudou elektroinstalaci, při které
+                využíváme dlouholetých zkušeností získaných z mnoha předchozích zakázek.
+            </p>
+        </section>
+    </section>
+    <section class="main-section" id="info-section2">
+        <div class="city-svg"></div>
+        <section>
+            <h2>O FIRMĚ</h2>
+            <p class="small-text">Hlavní činností naší společnosti jsou elektromontáže, při kterých nabízíme kompletní
+                paletu služeb. V
                 rámci této činnosti provádíme svým klientům slaboproudou i&nbspsilnoproudou elektroinstalaci, při které
                 využíváme dlouholetých zkušeností získaných z mnoha předchozích zakázek.
             </p>
@@ -80,7 +137,7 @@
     </section>
     <section class="main-section not-full-section" id="contact-section">
         <section id="contact-container">
-            <div>
+            <div class="contact-info">
                 <h1>KONTAKT</h1>
                 <span class="contact-row">
                     <div class="contact-icon-container"><i class="fas fa-home fa-2x"></i></div>
@@ -119,10 +176,84 @@
             </div>
         </section>
     </section>
-    <footer>
-        <section></section>
-        <section></section>
-        <section></section>
+    <footer class="footer-large">
+        <section class="city-left">
+        </section>
+        <section class="footer-middle-box">
+            <section>
+                <h3>Obchodní podmínky</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptates, doloribus cupiditate
+                    dignissimos sed illum ea consequatur voluptatem aliquam incidunt explicabo nam, rerum recusandae qui
+                    similique reiciendis? Facere, ratione magni.</p>
+            </section>
+            <section>
+                <span class="contact-row">
+                    <div class="contact-icon-container"><i class="fas fa-home fa-2x"></i></div>
+                    <div>
+                        <p>Jos. Jungmanna 174<br>Nový Bydžov</p>
+                    </div>
+                </span>
+                <span class="contact-row">
+                    <div class="contact-icon-container"><i class="fas fa-phone fa-2x"></i></div>
+                    <div>
+                        <p>605 111 113</p>
+                    </div>
+                </span>
+                <span class="contact-row">
+                    <div class="contact-icon-container"><i class="fas fa-envelope fa-2x"></i></div>
+                    <div>
+                        <p>subr.radek@seznam.cz</p>
+                    </div>
+                </span>
+                <span class="contact-row">
+                    <div class="contact-icon-container"></div>
+                    <div>
+                        <p>IČO: 698 82 568</p>
+                    </div>
+                </span>
+            </section>
+        </section>
+        <section class="city-right">
+        </section>
+    </footer>
+    <footer class="footer-small">
+        <section class="footer-large-box">
+            <section>
+                <h3>Obchodní podmínky</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptates, doloribus cupiditate
+                    dignissimos sed illum ea consequatur voluptatem aliquam incidunt explicabo nam, rerum recusandae qui
+                    similique reiciendis? Facere, ratione magni.</p>
+            </section>
+            <section>
+                <span class="contact-row">
+                    <div class="contact-icon-container"><i class="fas fa-home fa-2x"></i></div>
+                    <div>
+                        <p>Jos. Jungmanna 174<br>Nový Bydžov</p>
+                    </div>
+                </span>
+                <span class="contact-row">
+                    <div class="contact-icon-container"><i class="fas fa-phone fa-2x"></i></div>
+                    <div>
+                        <p>605 111 113</p>
+                    </div>
+                </span>
+                <span class="contact-row">
+                    <div class="contact-icon-container"><i class="fas fa-envelope fa-2x"></i></div>
+                    <div>
+                        <p>subr.radek@seznam.cz</p>
+                    </div>
+                </span>
+                <span class="contact-row">
+                    <div class="contact-icon-container"></div>
+                    <div>
+                        <p>IČO: 698 82 568</p>
+                    </div>
+                </span>
+            </section>
+        </section>
+        <section class="city-whole">
+
+        </section>
     </footer>
 </body>
 
