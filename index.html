@@ -8,6 +8,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/1115beb30f.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
 </head>
 
 <body>
@@ -21,12 +34,31 @@
                     <a href="#contact-section">KONTAKT</a>
                 </div>
                 <div class="nav-contact">
-                    <button class="btn btn-blue">KONTAKT</button>
+                    <button class="btn btn-blue"><a href="#contact-section">KONTAKT</a></button>
                     <h3 class="text-blue">605 111 113</h3>
                 </div>
             </nav>
-            <nav class="nav-mobile"></nav>
+            <div class="pos-f-t">
+                <div class="collapse" id="navbarToggleExternalContent">
+                    <div class="bg-dark p-4">
+                        <div class="nav-links">
+                            <a href="#info-section">O FIRMĚ</a>
+                            <a href="#sluzby-section">NAŠE SLUŽBY</a>
+                            <a href="#contact-section">OTEVÍRÁCÍ DOBA</a>
+                            <a href="#contact-section">KONTAKT</a>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars fa-2x"></i>
+                    </button>
+                </nav>
+            </div>
         </header>
+
         <section class="uvod-section">
             <section class="uvod-about">
                 <h1>ELEKTRO JE<br>NÁŠ <span style="color:#4C63DD;">SVĚT</span></h1>
@@ -69,15 +101,15 @@
         <h2 class="text-center">NAŠE SLUŽBY</h2>
         <section class="sluzby-row">
             <section>
-                <img src="graphics/4.svg" alt="" class="sluzby-icons">
+                <img src="graphics/icon1.svg" alt="" class="sluzby-icons">
                 <p>Elektro montáže pro fyzické osoby</p>
             </section>
             <section>
-                <img src="graphics/5.svg" alt="" class="sluzby-icons">
+                <img src="graphics/icon2.svg" alt="" class="sluzby-icons">
                 <p>Elektro montáže pro průmyslové objekty</p>
             </section>
             <section>
-                <img src="graphics/Asset_1.svg" alt="" class="sluzby-icons">
+                <img src="graphics/icon3.svg" alt="" class="sluzby-icons">
                 <p>Kabelové rozvody a&nbspmontáže kabelových koncovek</p>
             </section>
         </section>
@@ -104,12 +136,17 @@
                         <p>subr.radek@seznam.cz</p>
                     </div>
                 </span>
-                <span class="contact-row">
-                    <div class="contact-icon-container"><i class="fab fa-facebook-square fa-2x"></i></div>
-                    <div>
-                        <p>SubrElektro</p>
-                    </div>
-                </span>
+                <a class="fb-link" href="https://www.facebook.com/SubrElektro">
+                    <span class="contact-row">
+
+                        <div class="contact-icon-container"><i class="fab fa-facebook-square fa-2x"></i></div>
+                        <div>
+                            <p>
+                                SubrElektro</p>
+                        </div>
+
+                    </span>
+                </a>
                 <span class="contact-row">
                     <div class="contact-icon-container"><i class="fas fa-book fa-2x"></i></div>
                     <div>
