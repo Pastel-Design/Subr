@@ -203,6 +203,7 @@ nav>div {
 
 .nav-contact {
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     min-width: 290px;
 }
