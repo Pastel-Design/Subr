@@ -30,12 +30,12 @@
 
 html {
     scroll-behavior: smooth;
-    color: #707070;
+    color: #707070 !important;
 }
 
 body {
     margin: 0;
-    background-color: #f1f1f1;
+    background-color: #f1f1f1 !important;
     font-family: "basic-font";
     font-weight: 400;
     color: #707070;
@@ -91,7 +91,8 @@ h6 {
 }
 
 .small-text {
-    font-size: 1em;
+    font-size: 1.2em;
+    margin-bottom: 1em !important;
 }
 
 .main-section {
@@ -110,43 +111,43 @@ a {
 }
 
 .btn {
-    background-color: #ffffff;
-    border-radius: 50px;
-    border: 1px solid #bbbbbb;
-    display: inline-block;
-    cursor: pointer;
-    color: #000000;
-    font-family: "button-font";
-    font-weight: 600;
-    padding: 10px 24px;
-    text-decoration: none;
-    transition: 350ms;
-    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff !important;
+    border-radius: 50px !important;
+    border: 1px solid #bbbbbb !important;
+    display: inline-block !important;
+    cursor: pointer !important;
+    color: #000000 !important;
+    font-family: "button-font" !important;
+    font-weight: 600 !important;
+    padding: 10px 24px !important;
+    text-decoration: none !important;
+    transition: 350ms !important;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.15) !important;
 }
 
 .btn:hover {
-    background-color: #b9b9b9;
-    transition: 350ms;
-    color: white;
-    border: 1px#b9b9b9 solid;
+    background-color: #b9b9b9 !important;
+    transition: 350ms !important;
+    color: white !important;
+    border: 1px#b9b9b9 solid !important;
 }
 
 .btn:active {
-    position: relative;
-    top: 1px;
+    position: relative !important;
+    top: 1px !important;
 }
 
 .btn-blue {
-    border: 1px transparent solid;
-    background-color: #4c63dd;
-    color: white;
-    box-shadow: none;
+    border: 1px transparent solid !important;
+    background-color: #4c63dd !important;
+    color: white !important;
+    box-shadow: none !important;
 }
 
 .btn-blue:hover {
-    border: #808fda 1px solid;
-    color: black;
-    background-color: #f6f7ff;
+    border: #808fda 1px solid !important;
+    color: black !important;
+    background-color: #f6f7ff !important;
 }
 
 #map1 {
