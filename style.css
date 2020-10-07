@@ -45,11 +45,7 @@ body {
     justify-content: center;
 }
 
-a {
-    text-decoration: none !important;
-    font-style: normal !important;
-    color: black !important;
-}
+
 
 a:hover {
     text-decoration: none !important;
@@ -103,11 +99,6 @@ h6 {
     height: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-a {
-    text-decoration: none;
-    color: #000000;
 }
 
 .btn {
@@ -589,4 +580,9 @@ footer {
     .domek-svg {
         top: 0px;
     }
+}
+a {
+    text-decoration: none !important;
+    font-style: normal !important;
+    color: black !important;
 }
