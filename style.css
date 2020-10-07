@@ -271,27 +271,6 @@ header {
 #info-section2  .city-svg{
     max-height: 250px;
 }
-/**NAŠE CERTIFIKÁTY */
-.certification-row {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.round-icon-box {
-    margin: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
-    width: 70px;
-    border: 1px solid black;
-    border-radius: 100%;
-    background-color: white;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
-}
-
 /**NAŠE SLUŽBY */
 .sluzby-row {
     display: flex;
@@ -354,14 +333,16 @@ header {
 /**FOOTER */
 .footer-large {
     display: flex;
+    margin-top: -100px;
 }
 
 .footer-small {
     display: none;
+    padding-top: 0;
+    margin-top: -100px;
 }
 
 footer {
-    padding-top: 70px;
     display: flex;
     flex-flow: row;
 }
@@ -393,6 +374,15 @@ footer {
     background-image: url("graphics/footer-2.svg");
     background-size: contain;
     background-position: right bottom -15px;
+    background-repeat: no-repeat;
+}
+.city-whole {
+    display: block;
+    width: 100%;
+    height: 30vw;
+    background-image: url("graphics/panelaky.svg");
+    background-size: contain;
+    background-position: center bottom -15px;
     background-repeat: no-repeat;
 }
 
@@ -526,10 +516,10 @@ footer {
     .city-whole {
         display: block;
         width: 100vw;
-        height: 40vh;
+        height: 50vh;
         background-image: url("graphics/panelaky.svg");
-        background-size: contain;
-        background-position: center 10px;
+        background-size: cover;
+        background-position: bottom;
         background-repeat: no-repeat;
     }
 }
