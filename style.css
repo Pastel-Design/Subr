@@ -461,6 +461,7 @@ footer {
         flex-flow: column;
         width: 100vw;
         height: 80vh;
+        min-height: 600px;
     }
 
     .uvod-about {
@@ -582,6 +583,7 @@ footer {
         top: 0px;
     }
 }
+
 a {
     text-decoration: none !important;
     font-style: normal !important;
