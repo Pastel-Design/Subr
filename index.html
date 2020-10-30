@@ -5,169 +5,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Šubr Elektro</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css-reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-mobile.css">
+    <link rel="stylesheet" href="styles/sluzby.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/firma.css">
+    <link rel="stylesheet" href="styles/uvod.css">
+    <link rel="stylesheet" href="styles/collapsible.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <script src="https://kit.fontawesome.com/1115beb30f.js" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
 
 </head>
 
 <body>
-    <section class="main-section" id="section-1">
-        <header>
-            <nav class="nav-desktop">
-                <div class="nav-links">
-                    <a href="#info-section">O FIRMĚ</a>
-                    <a href="#sluzby-section">NAŠE SLUŽBY</a>
-                    <a href="#contact-section">KONTAKT</a>
-                </div>
-                <div class="logo-container-large">
-                    <img class="logo-large" src="graphics/logo.svg" alt="" srcset="">
-                </div>
-            </nav>
+    <section class="main-section" id="uvod-section">
+        <section>
 
-            <div class="pos-f-t">
-                <div class="collapse" id="navbarToggleExternalContent">
-                    <div class="bg-dark p-4">
-                        <div class="nav-links">
-                            <a href="#info-section">O FIRMĚ</a>
-                            <a href="#sluzby-section">NAŠE SLUŽBY</a>
-                            <a href="#contact-section">KONTAKT</a>
-                        </div>
-                    </div>
-                </div>
-                <nav class="navbar">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-bars fa-2x"></i>
-                    </button>
-                    <div class="logo-container-small">
-                        <img class="logo-small" src="graphics/logo.svg" alt="" srcset="">
-                    </div>
-                </nav>
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="#firma-section" class="nav-link">O&nbspFIRMĚ</a>
+                <a href="#sluzby-section" class="nav-link">NAŠE&nbspSLUŽBY</a>
+                <a href="#contact-section" class="nav-link">KONTAKT</a>
             </div>
-        </header>
 
-        <section class="uvod-section">
-            <section class="uvod-about">
-                <h1>ELEKTRO JE<br>NÁŠ <span style="color:#4C63DD;">SVĚT</span></h1>
-                <p class="small-text justify">Naší snahou a&nbspzároveň cílem je poskytovat elektro rozvody na vysoké
-                    kvalitativní úrovni. Tento cíl plníme společně se snahou udržovat ceny našich služeb na rozumné
-                    hladině.</p>
-            </section>
-            <section class="svgs">
-                <img src="graphics/domek.svg" alt="" class="domek-svg">
-            </section>
+                
+
+
+            <nav>
+                <button class="openbtn" onclick="openNav()">☰</button>
+                <img src="assets/logo.svg" alt="logo" class="logo-img">
+                <a href="#firma-section" class="nav-link">O&nbspFIRMĚ</a>
+                <a href="#sluzby-section" class="nav-link">NAŠE&nbspSLUŽBY</a>
+                <a href="#contact-section" class="nav-link">KONTAKT</a>
+            </nav>
+            <div class="uvod-text">
+                <h1>ELEKTRO&nbspJE<br>NÁŠ&nbsp<span class="logo-color-blue">SVĚT</span></h1>
+                <p>Naší snahou a&nbspzároveň cílem je poskytovat elektro rozvody na vysoké kvalitativní úrovni.
+                    Tento cíl plníme společně se snahou udržovat ceny našich služeb na rozumné hladině.
+                </p>
+            </div>
+        </section>
+        <section>
+            <img src="assets/zarovky.svg" alt="žárovky" class="zarovky-img">
+            <img src="assets/zarovky-male.svg" alt="žárovky" class="zarovky-male-img">
         </section>
     </section>
-    <section class="main-section" id="info-section">
-        <div class="city-svg"></div>
+    <section class="main-section" id="firma-section">
+        <section>
+            <img src="assets/zasuvka.svg" alt="zásuvka" class="zasuvka-img">
+        </section>
         <section>
             <h2>O FIRMĚ</h2>
-            <p class="small-text" style="font-family: 'basic-font',serif;">Hlavní činností naší společnosti jsou
-                elektromontáže, při kterých nabízíme
-                kompletní
-                paletu služeb. V&nbsprámci této činnosti provádíme svým klientům slaboproudou i&nbspsilnoproudou
-                elektroinstalaci, při které využíváme dlouholetých zkušeností získaných z&nbspmnoha předchozích zakázek.
-            </p>
+            <p>Hlavní činností naší společnosti jsou elektromontáže, při kterých nabízíme kompletní paletu služeb.
+                V&nbsprámci této činnosti provádíme svým klientům slaboproudou i&nbspsilnoproudou elektroinstalaci, při
+                které
+                využíváme dlouholetých zkušeností získaných z&nbspmnoha předchozích zakázek.</p>
         </section>
     </section>
-    <section class="main-section" id="info-section2">
+    <section class="main-section" id="sluzby-section">
+        <h2>NAŠE SLUŽBY</h2>
         <section>
-            <h2>O FIRMĚ</h2>
-            <p class="small-text" style="font-family: 'basic-font',serif;">Hlavní činností naší společnosti jsou elektromontáže, při kterých nabízíme
-                kompletní
-                paletu služeb. V&nbsprámci této činnosti provádíme svým klientům slaboproudou i&nbspsilnoproudou
-                elektroinstalaci, při které využíváme dlouholetých zkušeností získaných z&nbspmnoha předchozích zakázek.
-            </p>
-        </section>
-        <div class="city-svg"></div>
-    </section>
-    <section class="main-section not-full-section" id="sluzby-section">
-        <h2 class="text-center">NAŠE SLUŽBY</h2>
-        <section class="sluzby-row">
             <section>
-                <img src="graphics/icon1.svg" alt="" class="sluzby-icons">
-                <p>Elektro montáže pro fyzické osoby</p>
+                <h3>Elektromontáže silnoproud</h3>
+                Elektroinstalace průmyslová a bytová<br>
+                Kabelové rozvody<br>
+                Elektroinstalace průmyslová<br>
+                Montáž a správa veřejného osvětlení<br>
+                Přípojky, vrchní a kabelové vedení<br>
+                Hromosvody<br>
             </section>
             <section>
-                <img src="graphics/icon2.svg" alt="" class="sluzby-icons">
-                <p>Elektro montáže pro průmyslové objekty</p>
-            </section>
-        </section>
-        <section class="sluzby-text" style="font-family: 'basic-font',serif;">
-            <section>
-                <p>
-                    <h4>Elektromontáže silnoproud&nbsp </h4>
-                    <i class="fas fa-chevron-down fa-2x"></i>
-                </p>
-                <div class="card card-body">
-                    Elektroinstalace průmyslová a bytová<br>
-                    Kabelové rozvody<br>
-                    Elektroinstalace průmyslová<br>
-                    Montáž a správa veřejného osvětlení<br>
-                    Přípojky, vrchní a kabelové vedení<br>
-                    Hromosvody<br>
-                </div>
-            </section>
-            <section>
-                <p>
-                    <h4>Elektromontáže slaboproud&nbsp </h4>
-                    <i class="fas fa-chevron-down fa-2x"></i>
-                </p>
-                <div class="card card-body">
-                    Montáže EZS, EPS<br>
-                    Montáže domácích telefonů<br>
-                    Montáže kamerových systémů<br>
-                    Montáže datových rozvodů<br>
-                </div>
+                <h3>Elektromontáže slaboproud</h3>
+                Montáže EZS, EPS<br>
+                Montáže domácích telefonů<br>
+                Montáže kamerových systémů<br>
+                Montáže datových rozvodů<br>
             </section>
         </section>
     </section>
-    <section class="main-section not-full-section" id="contact-section" style="font-family: 'basic-font',serif;">
+    <section class="main-section" id="contact-section">
         <section id="contact-container">
             <section>
-                <h1>KONTAKT</h1>
+                <div class="contact-heading">
+                    <h2>KONTAKT</h2>
+                </div>
                 <div class="contact-info">
                     <section>
-                        <span class="contact-row">
+                        <div class="contact-row">
                             <div class="contact-icon-container"><i class="fas fa-user fa-lg"></i></div>
                             <div>
                                 <p>
                                     Radek Šubr
                                 </p>
                             </div>
-                        </span>
-                        <span class="contact-row">
-                            <div class="contact-icon-container"><b>IČ:</b></div>
-                            <div>
-                                <p>
-                                    69882568
-                                </p>
-                            </div>
-                        </span>
-                        <span class="contact-row">
-                            <div class="contact-icon-container"><b>DIČ:</b></div>
-                            <div>
-                                <p>
-                                    CZ7305043119
-                                </p>
-                            </div>
-                        </span>
-                        <span class="contact-row">
+                        </div>
+                        <div class="contact-row">
                             <div class="contact-icon-container"><i class="fas fa-phone fa-lg"></i></div>
                             <div>
                                 <p>
@@ -176,90 +110,83 @@
                                     </a>
                                 </p>
                             </div>
-                        </span>
+                        </div>
+                        <div class="contact-row">
+                            <div class="contact-icon-container"><b>IČ:</b></div>
+                            <div>
+                                <p>
+                                    69882568
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-row">
+                            <div class="contact-icon-container"><b>DIČ:</b></div>
+                            <div>
+                                <p>
+                                    CZ7305043119
+                                </p>
+                            </div>
+                        </div>
                     </section>
                     <section>
-                        <span class="contact-row">
-                            <div class="contact-icon-container"><i class="fas fa-at fa-lg"></i></div>
+                        <div class="contact-row">
+                            <div class="contact-icon-container"><i class="fab fa-facebook-f fa-lg"></i></div>
                             <div>
-                                <p>
-                                    <a href="mailto:radeksubr&#64;elektrosubr.cz">
-                                        <p class="hoverable-link">radeksubr&#64;elektrosubr.cz</p>
-                                    </a>
-                                </p>
-                            </div>
-                        </span>
-                        <span class="contact-row">
-                            <div class="contact-icon-container"></div>
-                            <div>
-                                <p>
-                                    <a href="mailto:stepansubr&#64;elektrosubr.cz">
-                                        <p class="hoverable-link">stepansubr&#64;elektrosubr.cz</p>
-                                    </a>
-                                </p>
-                            </div>
-                        </span>
-                        <a class="fb-link" href="https://www.facebook.com/SubrElektro">
-                            <span class="contact-row">
-                                <div class="contact-icon-container"><i class="fab fa-facebook-square fa-lg"></i></div>
-                                <div>
+                                <a href="https://www.facebook.com/SubrElektro">
                                     <p class="hoverable-link">
                                         SubrElektro
                                     </p>
-                                </div>
-                            </span>
-                        </a>
-                        <a class="fb-link"
-                            href="https://mapy.cz/zakladni?x=15.4883855&y=50.2457363&z=15&source=addr&id=10901956">
-                            <span class="contact-row">
-                                <div class="contact-icon-container"><i class="fas fa-map-marked-alt fa-lg"></i></div>
-                                <div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-row">
+                            <div class="contact-icon-container"><i class="fas fa-envelope fa-lg"></i></div>
+                            <div>
+                                <a href="mailto:radeksubr&#64;elektrosubr.cz">
+                                    <p class="hoverable-link">
+                                        radeksubr&#64;elektrosubr.cz
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-row">
+                            <div class="contact-icon-container"><i class="fas fa-at fa-lg"></i></div>
+                            <div>
+                                <a href="mailto:stepansubr&#64;elektrosubr.cz">
+                                    <p class="hoverable-link">
+                                        stepansubr&#64;elektrosubr.cz
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact-row">
+                            <div class="contact-icon-container"><i class="fas fa-home fa-lg"></i></div>
+                            <div>
+                                <a
+                                    href="https://mapy.cz/zakladni?x=15.4883855&y=50.2457363&z=15&source=addr&id=10901956">
                                     <p class="hoverable-link">
                                         Jos. Jungmanna 1747, <br>Nový Bydžov
                                     </p>
-                                </div>
-                            </span>
-                        </a>
+                                </a>
+                            </div>
+                        </div>
+
                     </section>
                 </div>
             </section>
             <section class="map-section">
                 <div class="mapouter">
-                    <div class="gmap_canvas"><iframe width="700" height="380" id="gmap_canvas"
+                    <div class="gmap_canvas">
+                        <iframe width="800" height="542" id="gmap_canvas"
                             src="https://maps.google.com/maps?q=Jos.%20Jungmanna%201747%2C%20Nov%C3%BD%20Byd%C5%BEov&t=&z=11&ie=UTF8&iwloc=&output=embed"
-                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
-                    <style>
-                        .mapouter {
-                            position: relative;
-                            text-align: right;
-                            height: 380px;
-                            width: 700px;
-                        }
-
-                        .gmap_canvas {
-                            overflow: hidden;
-                            background: none !important;
-                            height: 380px;
-                            width: 700px;
-                        }
-                    </style>
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
                 </div>
             </section>
         </section>
-
+        <section class="contact-shadow">
+        </section>
     </section>
-    <footer class="footer-large">
-        <section class="city-left">
-        </section>
-        <section class="city-whole"></section>
-        <section class="city-right">
-        </section>
-    </footer>
-    <footer class="footer-small">
-        <section class="city-whole">
-
-        </section>
-    </footer>
 </body>
 
 </html>
