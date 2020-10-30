@@ -20,8 +20,8 @@
     flex-flow: column;
     justify-content: center;
     padding-right: 50px;
-    padding-top: 170px;
-    padding-left: 150px;
+    padding-top: 185px;
+    padding-left: 170px;
 }
 
 #firma-section>section:nth-child(2)>p {
@@ -31,7 +31,11 @@
 .zasuvka-img {
     width: 448px;
 }
-
+@media screen and (max-width: 1400px){
+    #firma-section>section:nth-child(2)>p {
+        max-width: 500px;
+    }
+}
 @media screen and (max-width: 820px) {
     #firma-section {
         margin-bottom: 50px;

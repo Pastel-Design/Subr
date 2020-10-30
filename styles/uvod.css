@@ -19,8 +19,8 @@
     height: 100%;
     display: flex;
     flex-flow: column;
-    padding-left: 170px;
-    padding-top: 170px;
+    margin-left: 160px;
+    margin-top: 240px;
 }
 
 .uvod-text>p {
@@ -35,16 +35,26 @@ nav {
 }
 
 nav>a {
-    margin-left: 55px;
+    margin-left: 2.3vw;
 }
 
 .logo-img {
-    height: 90px;
+    height: 5vw;
+    max-height: 80px;
+    margin-right: 10%;
 }
-
+.zarovky>img{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
 .zarovky-img {
-    min-height: 680px;
-    min-width: 770px;
+    background-color: brown;
+    width: 100%;
+    padding-top: 91.46%;
+    position: relative;
 }
 
 .zarovky-male-img {
@@ -62,6 +72,42 @@ h1 {
 .openbtn{
     display: none;
 }
+@media screen and (max-width: 1400px) {
+    #uvod-section>section:first-child {
+        width: 35vw;
+        min-width: 560px;
+    }
+    #uvod-section>section {
+        width: 65vw;
+    }
+    nav {
+        padding: 30px;
+    }
+    .logo-img {
+        height: 4vw;
+        min-height: 50px;
+        margin-right: 5%;
+    }
+    nav>a {
+        font-size: 12px;
+    }
+    .uvod-text {
+        height: 100%;
+        display: flex;
+        flex-flow: column;
+        margin-left: 5vw;
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #uvod-section>section:first-child {
+        width: 22vw;
+        min-width:440px;
+    }
+    #uvod-section>section {
+        width: 78vw;
+    }
+}
 @media screen and (max-width: 820px) {
     #uvod-section{
         margin-bottom: 50px;
@@ -75,6 +121,10 @@ h1 {
 
     .zarovky-male-img {
         display: block;
+        background-color: brown;
+        height: 100%;
+        padding-right: 19.09%;
+        position: relative;
     }
 
     #uvod-section>section:first-child {
@@ -92,8 +142,8 @@ h1 {
         width: 100%;
         display: flex;
         flex-flow: column;
-        padding-left: 30px;
-        padding-top: 120px;
+        margin-left: 30px;
+        margin-top: 120px;
     }
 
     nav>a {
@@ -109,7 +159,8 @@ h1 {
     }
 
     .uvod-text>p {
-        max-width: 255px;
+        min-width: 255px;
+        max-width: 60vw;
     }
 }
 @media screen and (max-width: 600px) {
