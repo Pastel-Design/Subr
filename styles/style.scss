@@ -1,3 +1,9 @@
+@use "animation";
+@use "collapsible";
+@use "contact";
+@use "firma";
+@use "sluzby";
+@use "uvod";
 @font-face {
     font-family: 'WorkSansBold';
     src: url('../../fonts/WorkSans-Bold.ttf') format('truetype');
@@ -22,7 +28,6 @@ body {
     color: #707070;
     font-size: 19px;
     overflow-x: hidden;
-    /*background-image: url("../assets/SUBR\ FULL.svg");*/
 }
 
 .main-section {
@@ -64,9 +69,6 @@ a {
     font-family: "WorkSansBold";
 }
 @media screen and (max-width: 1400px) {
-    body {
-        /*background-image: url("../assets/subrklarka.png");*/
-    }
     h1 {
         font-size: 2em;
     }
@@ -77,10 +79,7 @@ a {
     
     h3 {
         font-size: 22px;
-    }/*
-    body {
-        font-size: 19px;
-    }*/
+    }
 }
 @media screen and (max-width: 600px) {
     h2 {
